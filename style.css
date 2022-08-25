@@ -122,3 +122,28 @@ html {
 footer.attribution {
     display: none;
 }
+
+
+
+@media screen and (min-width:1440px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+        height: 28em;
+        max-width: 18em;
+    }
+    .card__title {
+        font-size: 2.5em;
+    }
+    
+    .card__desc {
+        font-size: calc(var(--fze) * 1.55);
+    }
+    
+    .card__btn{
+        font-size: calc(var(--fze) * 1.55);
+        padding: .75em 2em;
+        border-radius: 1.5em;
+    }
+}
