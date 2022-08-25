@@ -1,0 +1,28 @@
+:root {
+
+    --card-1: hsl(31, 77%, 52%);
+    --card-2: hsl(184, 100%, 22%);
+    --card-3: hsl(179, 100%, 13%);
+
+    --text: hsla(0, 0%, 100%, 0.75);
+    --light: hsl(0, 0%, 95%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+Breakpoints: 
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+
+html {
+    /* 1em == 15px */
+    font-size: 93.75%;
+}
+
