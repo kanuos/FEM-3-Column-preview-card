@@ -89,12 +89,16 @@ html {
 }
 
 .card__btn{
+    display: block;
+    text-decoration: none;
+    color: var(--light);
     border: 2px solid var(--light);
     padding: .5em 1.5em;
     border-radius: 1.5em;
     font-size: var(--fze);
     cursor: pointer;
     transition: all .2s linear;
+    background-color: var(--light);
 }
 
 .card__btn:hover, .card__btn:active, .card__btn:focus {
@@ -119,7 +123,7 @@ html {
     color: var(--card-3);
 }
 
-footer.attribution {
+.attribution, .sr-only {
     display: none;
 }
 
