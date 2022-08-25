@@ -7,12 +7,14 @@
     --text: hsla(0, 0%, 100%, 0.75);
     --light: hsl(0, 0%, 95%);
 
+    --fze : .65em
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Lexend Deca";
 }
 
 /* 
@@ -26,3 +28,97 @@ html {
     font-size: 93.75%;
 }
 
+/* main container */
+.container {
+    height: 100%;
+    min-height: 100vh;
+    padding: 2em;
+    background-color: var(--light);
+    display: grid;
+    place-items: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: .5em;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+
+.card {
+    height: 18em;
+    max-width: 14em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 1.5em;
+}
+
+.card--1 {
+    background-color: var(--card-1);
+}
+
+.card--2 {
+    background-color: var(--card-2);
+}
+
+.card--3 {
+    background-color: var(--card-3);
+}
+
+.card__icon {
+    display: block;
+    height: 2em;
+    width: auto;
+    object-fit: cover;
+}
+
+.card__title {
+    font-family: "Big Shoulders Display";
+    text-transform: uppercase;
+    color: var(--light);
+    font-size: 1.5em;
+}
+
+.card__desc {
+    font-size: var(--fze);
+    color: var(--text);
+}
+
+.card__btn{
+    border: 2px solid var(--light);
+    padding: .5em 1.5em;
+    border-radius: 1.5em;
+    font-size: var(--fze);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.card__btn:hover, .card__btn:active, .card__btn:focus {
+    background-color: transparent;
+    color: var(--light);
+}
+
+.card__btn,
+.card__btn:focus {
+    outline: none;
+}
+
+.card__btn--1 {
+    color: var(--card-1);
+}
+
+.card__btn--2 {
+    color: var(--card-2);
+}
+
+.card__btn--3 {
+    color: var(--card-3);
+}
+
+footer.attribution {
+    display: none;
+}
